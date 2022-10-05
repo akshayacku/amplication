@@ -21,8 +21,6 @@ async function bootstrap() {
     sendServerLoadEvent();
   }
 
-  console.log('Bootstrap test');
-
   /**
    * Cloud Tracing @see https://cloud.google.com/trace/docs
    */

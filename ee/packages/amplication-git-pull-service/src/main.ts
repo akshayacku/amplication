@@ -11,6 +11,8 @@ async function main() {
 
   app.listen();
 
+  console.log("Listening");
+
   return app;
 }
 
