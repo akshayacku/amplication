@@ -21,6 +21,8 @@ async function bootstrap() {
     sendServerLoadEvent();
   }
 
+  console.log('Bootstrap test');
+
   /**
    * Cloud Tracing @see https://cloud.google.com/trace/docs
    */
@@ -53,7 +55,7 @@ async function bootstrap() {
   await app.listen(process.env.PORT || 3000);
 }
 
-bootstrap().catch(error => {
+bootstrap().catch((error) => {
   console.error(error);
   process.exit(1);
 });
